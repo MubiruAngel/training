@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block title %}Contact as{% endblock %}
+{% block header %}
+<style>
+    header {
+        background-color: green;
+    }
+</style>
+<h1 style="font-size: 40px; color:gold">YOU CAN CONTACT US ON OUR PLATFORMS MENTIONED BELOW</h1>{% endblock %}
+{% block body %}
+<style>
+    body {
+        background-color: rgb(60, 7, 252);
+    }
+    form {
+        font-size: 40px;
+        color: brown;
+    }
+    label {
+        font-weight: bold;
+    }
+    input {
+        font-size: large;
+    }
+    button {
+        font-size: larger;
+        font-weight: bold;
+        color: greenyellow;
+    }
+</style>
+<center>
+<form>
+    <label for="demo">Full name</label><br/>
+    <input type="text" id="demo"><br/>
+    <label for="demo">Email address</label><br/>
+    <input type="text" id="demo"><br/>
+    <label for="demo">Phone number</label><br/>
+    <input type="number" id="demo"><br/><br/>
+    <button>SUBMIT</button>
+</form>
+</center>
+{% endblock %}

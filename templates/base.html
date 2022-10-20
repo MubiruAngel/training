@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1.0"/>
+    <title>{% block title %}{% endblock %}</title>
+</head>    
+<body>
+<header>
+    <nav style="font-size: 30px; color:red;">
+        <a href="http://127.0.0.1:5000">Home</a>|
+        <a href="http://127.0.0.1:5000/contact">Contact Us</a>|
+        <a href="http://127.0.0.1:5000/about">About</a>|
+        <a href="http://127.0.0.1:5000/feedback">Feedback</a>
+    </nav>
+    <center>{% block header %}{% endblock %}</center>
+</header>
+<hr style="font-size: 20px ;"/>
+    {% block body %}
+    {% endblock %}
+</body>
+<br/>
+<hr/>
+<center><footer>@Angel 2022<br>
+    All rights reserved
+
+</footer>
+</center>
+</html>
